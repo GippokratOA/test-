@@ -11,7 +11,248 @@
         "title": "Database",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "diagramType": "STRIDE",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 963,
+                "y": 170
+              },
+              "angle": 0,
+              "id": "fbca7b3b-31f3-416c-8895-2a02861e45ce",
+              "z": 1,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Пользователь"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 509,
+                "y": 165
+              },
+              "angle": 0,
+              "id": "b183a270-69ae-4df9-bec4-181d92579a89",
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Потенциальный\nатакующий"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 827,
+                "y": 61
+              },
+              "target": {
+                "x": 827,
+                "y": 371
+              },
+              "vertices": [
+                {
+                  "x": 829,
+                  "y": 206
+                }
+              ],
+              "id": "62bc1679-2399-4419-867f-f1d878a30301",
+              "z": 3,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 1363,
+                "y": 166
+              },
+              "angle": 0,
+              "id": "e3a98b71-41f9-4aa4-99b9-d985bc6ce7e6",
+              "z": 5,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "База данных"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "fbca7b3b-31f3-416c-8895-2a02861e45ce"
+              },
+              "target": {
+                "id": "e3a98b71-41f9-4aa4-99b9-d985bc6ce7e6"
+              },
+              "vertices": [
+                {
+                  "x": 1236,
+                  "y": 154
+                }
+              ],
+              "id": "62cbbe6c-6f34-419b-ad07-40951f84fedd",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.46474028264751255,
+                    "offset": -39.44054419658913
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Запрос",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 6,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "e3a98b71-41f9-4aa4-99b9-d985bc6ce7e6"
+              },
+              "target": {
+                "id": "fbca7b3b-31f3-416c-8895-2a02861e45ce"
+              },
+              "vertices": [
+                {
+                  "x": 1231,
+                  "y": 266
+                }
+              ],
+              "id": "3c3b91fb-d214-4169-96d8-6f825e28f0c5",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.5161957709454501,
+                    "offset": -30.066757370363998
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Ответ",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 7,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "b183a270-69ae-4df9-bec4-181d92579a89"
+              },
+              "target": {
+                "id": "fbca7b3b-31f3-416c-8895-2a02861e45ce"
+              },
+              "vertices": [],
+              "id": "cb8064f2-6e63-4835-8535-53fd07844dde",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 8,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 1652
+        }
       }
     ]
   }
