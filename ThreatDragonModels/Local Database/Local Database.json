@@ -156,7 +156,7 @@
                 },
                 {
                   "ruleId": "edb05d76-a695-455f-947b-7d67b78bc31d",
-                  "title": "Высокие привелегии",
+                  "title": "Неправильные привелегии",
                   "type": "Elevation of privilege",
                   "modelType": "STRIDE",
                   "status": "Open",
@@ -166,6 +166,8 @@
                   "threatId": "f3725a09-787e-4e76-a251-3aeca532bf65"
                 }
               ],
+              "isALog": false,
+              "storesCredentials": false,
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasOpenThreats isInScope"
