@@ -89,6 +89,21 @@
               ],
               "id": "62bc1679-2399-4419-867f-f1d878a30301",
               "z": 3,
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.574197846145184,
+                    "offset": 1.8780723714946703
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Файрволл",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
               "attrs": {}
             },
             {
