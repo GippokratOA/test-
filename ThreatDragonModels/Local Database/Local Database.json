@@ -119,16 +119,62 @@
               "angle": 0,
               "id": "e3a98b71-41f9-4aa4-99b9-d985bc6ce7e6",
               "z": 5,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "ruleId": "4adaa48a-0345-4533-a189-64c98c4420dd",
+                  "title": "Физическое вмешательство в работу компьютера, на котором находитсябаза данных",
+                  "type": "Tampering",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "",
+                  "mitigation": "",
+                  "threatId": "b7ba2d82-b348-403c-adfb-93ebca60ec85"
+                },
+                {
+                  "ruleId": "87bc37e2-798e-4d68-bb96-feb1da26da48",
+                  "title": "Взлом компьютера администратора",
+                  "type": "Repudiation",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "High",
+                  "description": "Потенциальный атакующий получает доступ к компьютеру, имеющему доступ к локальной базе данных, в следствие имеет полный контроль над базой данной",
+                  "mitigation": "Многофакторная аутентификация на доступ к базе данных, мониторинг безопасности администрирующего пк",
+                  "threatId": "544b2ff1-de57-421f-b48c-cab8ad6eb046"
+                },
+                {
+                  "ruleId": "13000296-b17d-4b72-9cc4-f5cc33f80e4c",
+                  "title": "Раскрытие информациио БД",
+                  "type": "Information disclosure",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "Информация о БД, пара логин/пароль, способ доступа, содержание базы данных оказываются раскрыты",
+                  "mitigation": "Хранение любой информации о базе данных в секрете",
+                  "threatId": "63fa5106-0274-483f-a04c-4bb624dda4e8"
+                },
+                {
+                  "ruleId": "edb05d76-a695-455f-947b-7d67b78bc31d",
+                  "title": "Высокие привелегии",
+                  "type": "Elevation of privilege",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Low",
+                  "description": "Неправильно настроенные привелегии пользователя могут стать причиной нарушения работы базы данных",
+                  "mitigation": "Правильная настройка привелегий",
+                  "threatId": "f3725a09-787e-4e76-a251-3aeca532bf65"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "База данных"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
